@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title th:text="${pageTitle}"></title>
+</head>
+<body>
+<h1 th:text="${title}"></h1>
+<ul>
+    <li>
+        <a th:href="@{/params/string(text='Hello Spring')}">/params/string?text=Hello Spring</a>
+    </li>
+    <li>
+        <a th:href="@{/params/string(text='Hello Boot')}">/params/string?text=Hello Boot</a>
+    </li>
+
+</ul>
+</body>
+</html>
