@@ -49,7 +49,6 @@ public class IndexController {
     @GetMapping("/list")
     public String list(Model model) {
 
-
         model.addAttribute("pageTitle", "User list");
         model.addAttribute("title", "Listado de usuarios");
         model.addAttribute("listText", listText);
