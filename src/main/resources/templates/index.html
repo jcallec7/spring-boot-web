@@ -2,9 +2,13 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
     <title th:text="${title}"></title>
 </head>
 <body>
-<h1 th:text="${title}"></h1>
+<h1 class="red-colour" th:text="${title}"></h1>
+<h1 class="red-colour" th:text="${indexText}"></h1>
+<h2 class="blue-colour">Estilo</h2>
+<img th:src="@{/images/sunset.jpg}" alt="sunset"/>
 </body>
 </html>

@@ -6,6 +6,7 @@
 </head>
 <body>
 <h1 th:text="${title}"></h1>
+<span th:text="${listText}"></span>
 <span th:if="${users.isEmpty()}">No users in list</span>
 
 <table th:if="${!users.isEmpty()}">
